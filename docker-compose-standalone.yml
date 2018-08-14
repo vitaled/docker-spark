@@ -44,8 +44,6 @@ services:
         - 7016
         - 8881
         - 8081
-#      ports:
-#        - "8081:8081"
   data_vol:
      image: busybox
      volumes:
