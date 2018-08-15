@@ -22,7 +22,7 @@ services:
         - SPARK_CONF_DIR=/conf/master
       command: spark-class org.apache.spark.deploy.master.Master -h master
   worker:
-      image: vitaled/spark:latest
+      image: vitaled/docker-spark:latest
       hostname: worker
       environment:
         - MASTER=spark://master:7077
